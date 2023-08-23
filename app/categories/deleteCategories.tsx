@@ -1,9 +1,9 @@
 "use client";
 import { useState, SyntheticEvent } from "react";
-import axios from "axios";
+// import axios from "axios";
 import { useRouter } from "next/navigation";
 
-export default function DeleteCategories({ category }: {category: any}) {
+export default function DeleteCategories({ category }: { category: any }) {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
 
@@ -25,7 +25,7 @@ export default function DeleteCategories({ category }: {category: any}) {
       <div className={isOpen ? 'modal modal-open' : 'modal'}>
         <div className="modal-box">
           <h3 className="font-bold text-lg text-center">Apakah anda yakin ingin menghapus?</h3>
-          <h1 className="text-2xl text-center mt-3 bg-gray-200 dark:bg-neutral py-2 rounded-xl">"{category.categories}"</h1>
+          <h1 className="text-2xl text-center mt-3 bg-gray-200 dark:bg-neutral py-2 rounded-xl">&quot;{category.categories}&quot;</h1>
 
           <div className="flex gap-2 justify-center mt-5">
             <button type="button" className="btn btn-neutral btn-sm" onClick={handleModal}>Batal</button>
