@@ -1,0 +1,23 @@
+{
+   "categories": [
+      {
+         "id": 1,
+         "categories": "kebutuhan",
+         "max_nominal": 2900000
+      },
+      {
+         "id": 2,
+         "categories": "foya-foya",
+         "max_nominal": 1000000
+      }
+   ],
+   "usages": [
+      {
+         "id": 1,
+         "id_categories": 1,
+         "desc_usage": "Cicilan Motor",
+         "nominal": 1440000,
+         "created_at": "2023-06-02"
+      }
+   ]
+}
